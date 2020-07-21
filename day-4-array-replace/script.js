@@ -2,16 +2,13 @@
 
 function arrayToReplace(array, elemToReplace, substitutionElem) {
     // iterate through list
+    // check for matching number
+    // update the match
     for(let i = 0; i < array.length; i++) {
         if(array[i] === elemToReplace) {
             array[i] = substitutionElem;
         }
     }
-
-    // check for matching number
-
-    // update the match
-
     // return value
     return array;
 }
