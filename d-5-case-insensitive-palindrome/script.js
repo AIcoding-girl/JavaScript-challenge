@@ -13,7 +13,16 @@ function caseInsensitivePalindrome(str) {
     const caselessStr = str.toLowerCase();
 
     // compare it forwards and backwards
-    const reversedCaselessStr = caselessStr.split('').reverse().join('');
+
+    // solution 1:
+    // const reversedCaselessStr = caselessStr.split('').reverse().join('');
+
+    // alternative way:
+    let reversedCaselessStr = '';
+
+    for (let i = caselessStr.length -1; i >= 0; i--) {
+        reversedCaselessStr += caselessStr[i];
+    }
 
     // return result
     return caselessStr === reversedCaselessStr;
