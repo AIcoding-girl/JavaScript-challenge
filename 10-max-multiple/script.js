@@ -10,12 +10,14 @@ the largest integer divisible by 3 and not greater than 10 is 9
 
 */
 
-function MaxMultiple(divisor, bound) {
+function maxMultiple(divisor, bound) {
+    const remainder = bound % divisor;
 
+    return bound - remainder;
 };
 
-const divisor = 3;
-const bound = 10;
+const divisor = 4;
+const bound = 21;
 
 const result = maxMultiple(divisor, bound);
 console.log("result:", result);
