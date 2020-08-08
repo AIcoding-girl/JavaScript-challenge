@@ -9,3 +9,13 @@ for divisor = 3 and bound = 10, the output should be maxMultiple(divisor, bound)
 the largest integer divisible by 3 and not greater than 10 is 9
 
 */
+
+function MaxMultiple(divisor, bound) {
+
+};
+
+const divisor = 3;
+const bound = 10;
+
+const result = maxMultiple(divisor, bound);
+console.log("result:", result);
